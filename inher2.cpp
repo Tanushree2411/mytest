@@ -1,3 +1,4 @@
+
 #include<iostream>
 using namespace std;
 
@@ -7,7 +8,7 @@ public:
 int a1;
 void talk()
 {
-cout<<"talkinh\n";
+cout<<"talking\n";
 }
 protected:
 int a2=10;
@@ -47,14 +48,15 @@ cout<< "a2 is "<<a2;
 
 int main()
 {
-person p1;
-doctor d1;
+//person p1;
+//doctor d1;
 ortho o1;
 //d1.talk();
 //d1.walk();
 //d1.work();
-d1.doctor1();
+//d1.doctor1();
 o1.doctor2();
 o1.talk();
+d1.talk();
 return 0;
 }
