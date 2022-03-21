@@ -3,6 +3,7 @@
 using namespace std;
 
 class complex{
+public:
 	int real,img;
 	public:
 	complex(){
@@ -18,6 +19,10 @@ class complex{
 	void display(){
 	cout<<"real is "<<real<<"img is"<<img<<endl;
 	}
+};
+class B{
+public:
+int real,img;
 	//friend complex operator +( ob);
 
 	complex operator + (complex ob){
@@ -26,7 +31,7 @@ class complex{
 		temp.img=img+ob.img;
 		return temp;
 		}
-	complex operator - (complex ob){
+	/*complex operator - (complex ob){
 		complex temp;
 		temp.real=real-ob.real;
 		temp.img=img-ob.img;
@@ -81,12 +86,12 @@ complex operator ++ (){
 		temp.img=++img;
 		return temp;
 		}
-complex operator -- (int){
+/*complex operator -- (){
 		complex temp;
 		temp.real=real--;
 		temp.img=img--;
 		return temp;
-		} //postfix not happening
+		}*/ //postfix not happening
 
 
 
@@ -123,7 +128,7 @@ c3=c1>>c2;
 c3.display();
 c3=++c1;
 c3.display();
-c3=c1--;
+//c3=c1--;
 c3.display();
 
 
